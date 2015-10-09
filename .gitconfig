@@ -1,7 +1,7 @@
 [user]
-    name = ankujain
-    email = ankujain@amazon.com
-    groups = krew-dev
+    name = samudra
+    email = samudra@amazon.com
+    groups = krf-dev
 
 [color]
     ui = true
@@ -13,9 +13,14 @@
 
 [core]
     editor = vim
+    pager = less -FMRiX
+    excludefile = /home/samudra/.config/git/excludes
 
 # For resolving conflicts, I have found nothing better than the p4merge visual merge tool.
 # Install it for free from perforce website and set these options.
+[push]
+    default = simple
+
 [merge]
     tool = p4merge
     conflictstyle = diff3  # This option gives you the baseline code in the diff marks that
@@ -69,3 +74,5 @@
 
     # I wonder if you can figure this out...
     log-vgrep = "!pattern=$1 shift && git log --format='%H%x09%s' $@ | grep -v ""\"$pattern\""" | cut -f1 | git log --stdin --no-walk #"
+    dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+
