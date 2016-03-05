@@ -35,7 +35,7 @@ set nocp
 "
 set selectmode=mouse
 "use mouse for stuff
-set mouse=a
+set mouse=v
 "Ignore case in searches
 set ignorecase
 "Set background to dark for more contrast
@@ -110,7 +110,6 @@ set showmatch
 set softtabstop=2
 set nostartofline
 set tabstop=4
-set textwidth=78
 set title
 set visualbell
 set wildmenu
