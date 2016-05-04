@@ -14,4 +14,7 @@ GIT_PS1_SHOWCOLORHINTS=true
 GIT_PS1_SHOWUPSTREAM=auto,verbose
 source ~/code/random/git-prompt.sh  # CHANGE THIS to match where you downloaded the script
 ```
+##findsymbol.sh
+Copy this script to a directory where you have multiple libraries. Use this as:
+./findsymbol.sh <SYMBOL>
 
